@@ -17,7 +17,7 @@ $rdStation = new RDStation(env('RDSTATION_PUBLIC_KEY'));
 $rdStation->post('conversions', [
    'event_type' => 'CONVERSION', 	// optional default CONVERSION 
    'event_family' => 'CDP', 		// optional default CDP 
-      'payload' => [
+   'payload' => [
       'conversion_identifier' => 'CONVERSÃO TESTE', 	// required default CONVERSION
       'email' => 'email@domain.com', 	 	 	// required
       // oother fields...
