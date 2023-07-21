@@ -54,7 +54,7 @@ class RDStation {
 
 	public function callEvent( string $email, $args = array(), string $eventName = "CONVERSION", $timeout = self::TIMEOUT)
 	{
-		$args['email'] => $email;
+		$args['payload']['email'] => $email;
 		return $this->makeRequest('post', "events?event_type=$eventName", $args, $timeout);
 	}
 
