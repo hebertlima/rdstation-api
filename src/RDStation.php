@@ -52,6 +52,12 @@ class RDStation {
 		return $this->makeRequest('delete', $url, $args, $timeout);
 	}
 
+	public function callEvent( string $email, $args = array(), string $eventName = "CONVERSION", $timeout = self::TIMEOUT)
+	{
+		$args['email'] => $email;
+		return $this->makeRequest('post', "events?event_type=$eventName", $args, $timeout);
+	}
+
 	private function makeRequest($method, $url, $args = [], $timeout = self::TIMEOUT)
 	{
 		$url = $this->endpoint . '/' . $url;
