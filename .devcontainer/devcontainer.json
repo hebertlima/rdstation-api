@@ -1,0 +1,6 @@
+{
+	"name": "RD Station Api",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+}

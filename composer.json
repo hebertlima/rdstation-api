@@ -1,0 +1,25 @@
+{
+    "name": "hdelima/rdstation-api",
+    "description": "Simple RD Station wrapper",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hdelima\\RDStation\\": "src/"
+        }
+    },
+	"autoload-dev": {
+        "psr-4": {
+            "Hdelima\\RDStation\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Hebert Lima",
+            "email": "hebert.dev@hotmail.com"
+        }
+    ],
+    "require-dev": {
+        "vlucas/phpdotenv": "^5.5",
+        "phpunit/phpunit": "^9"
+    }
+}
